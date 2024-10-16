@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+    font-size: 3.6rem;
+
+}
+
+.wrapper {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+        "one one seven three"
+        "five four four two"
+        "six four four two"
+    ;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+.blue {
+    background-color: cornflowerblue;
+
+}
+
+.purple {
+    background-color: slateblue;
+}
+
+.green {
+    background-color: greenyellow;
+}
+.one{
+grid-area:one;
+}
+.two{
+    grid-area:two;
+}
+.three{
+    grid-area:three;
+}
+.four{
+    grid-area:four;
+    
+}
+.five{
+    grid-area:five;
+}
+.six{
+    grid-area:six;
+    
+}
+.seven{
+  
+    grid-area:seven;
+}
